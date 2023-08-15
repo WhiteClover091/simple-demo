@@ -63,7 +63,10 @@ func (*VideoDao) QueryVideoByUserId(userId int64) ([]*Video, error) {
 func (*VideoDao) QueryVideo(date *string, limit int) []*Video {
 	fmt.Println(*date)
 	var VideoList []*Video
+	//modify
 	SqlSession.Where("create_at < ?", *date).Order("create_at desc").Find(&VideoList)
+	// dateNum, _ := strconv.ParseInt(*date, 10, 8)
+	// SqlSession.Where("create_at < ?", dateNum).Order("create_at desc").Find(&VideoList)
 	if len(VideoList) <= limit {
 		fmt.Println(VideoList)
 		return VideoList
