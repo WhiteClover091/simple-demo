@@ -1,0 +1,7 @@
+fileChangeLogs:
+  - '1'
+  - models/mysql.go
+  - resources/application.yaml
+  - controller/publish.go
+  - models/video.go
+  - controller/token.go
