@@ -5,3 +5,5 @@ fileChangeLogs:
   - controller/publish.go
   - models/video.go
   - controller/token.go
+  - '2'
+  - docs.md
