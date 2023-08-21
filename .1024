@@ -1,5 +1,0 @@
-components:
-  - filetree
-  - shell
-  - console
-run_command: go run *.go
